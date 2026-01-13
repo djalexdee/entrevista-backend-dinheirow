@@ -1,0 +1,23 @@
+[
+    {
+        "code": "TAM-123",
+        "origin": "FOR",
+        "destination": "MCZ",
+        "status": "on time",
+        "passengers": []
+    },
+    {
+        "code": "GOL-678",
+        "origin": "VIX",
+        "destination": "GRU",
+        "status": "delayed",
+        "passengers": []
+    },
+    {
+        "code": "AZU-678",
+        "origin": "LAX",
+        "destination": "CGH",
+        "status": "cancelled",
+        "passengers": []
+    }
+]
