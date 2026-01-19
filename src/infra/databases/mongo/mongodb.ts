@@ -52,7 +52,7 @@ export class MongoStrategy extends Database {
         destination: string;
         status: string;
     }) {
-        return FlightsModel.create(flight)
+        return await FlightsModel.create(flight);
     }
 
     public async getFlightByCode(code: string) {

@@ -44,8 +44,11 @@ export class PostgreStrategy extends Database {
         destination: string;
         status: string;
     }) {
-        return PostgreStrategy._instance.public.one(
+        PostgreStrategy._instance.public.none(
             `INSERT INTO flights (code, origin, destination, status) VALUES ('${flight.code}', '${flight.origin}', '${flight.destination}', '${flight.status}')`,
+        );
+        return PostgreStrategy._instance.public.one(
+            `SELECT * FROM flights WHERE code = '${flight.code}'`,
         );
     }
 
